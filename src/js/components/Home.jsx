@@ -213,3 +213,40 @@ import rigoImage from "../../img/rigo-baby.jpg";
 //     )
 // }
 // export default Home;
+
+//7️⃣ Timer with useEffect
+//👉 Task: Show a timer that updates every second.
+
+
+
+// const Home = () => {
+//   const [timer, setTimer] = useState(0);
+
+//   useEffect(() => {
+//     let interval = setInterval(() => {
+//       setTimer(prevTimer => prevTimer + 1);
+//     }, 1000);
+//     return () => clearInterval(interval);
+//   }, []);
+
+//   const seconds = timer % 60;
+//   const minutes = Math.floor(timer / 60) % 60;
+//   const hours = Math.floor(timer / 3600);
+
+//   return (
+//     <div className="container d-flex align-items-baseline justify-content-center">
+//       <h1>Timer:</h1>
+//       <div style={{ margin: "20px" }} className="hours">
+//         {hours} hr
+//       </div>
+//       <div style={{ margin: "20px" }} className="minutes">
+//         {minutes} min
+//       </div>
+//       <div style={{ margin: "20px" }} className="seconds">
+//         {seconds} sec
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Home;
